@@ -26,3 +26,5 @@ def main():
             break
         else:
             print("invalid input, enter from 1 - 4")
+
+main()
