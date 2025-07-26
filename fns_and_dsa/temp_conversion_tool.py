@@ -7,10 +7,10 @@ def convert_to_fahrenheit(celsius):
 temperature = float(input("Enter the temperature to convert: "))
 type_of_temperature = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper()
 if type_of_temperature == "C":
+    converted_temperature = convert_to_fahrenheit(temperature)
+    print(f"{temperature}°C is {converted_temperature}°F")
+elif type_of_temperature == "F":
     converted_temperature = convert_to_celsius(temperature)
     print(f"{temperature}°F is {converted_temperature}°C")
-elif type_of_temperature == "F":
-    converted_temprature = convert_to_fahrenheit(temperature)
-    print(f"{temperature}°C is {converted_temprature}°F")
 else:
-    print("Invalid temperature. Please enter a numeric value.")
+    print("Invalid input. Please enter 'C' or 'F'.")
