@@ -3,7 +3,7 @@ def safe_divide(numerator, denominator):
          numerator = float(numerator)
          denominator = float(denominator)
          if denominator == 0:
-             raise ZeroDivisionError("Can't divide by zero")
+             raise ZeroDivisionError("Cannot divide by zero.")
          result = numerator / denominator
          return (f"The result is {result}")
     except ValueError as error:
